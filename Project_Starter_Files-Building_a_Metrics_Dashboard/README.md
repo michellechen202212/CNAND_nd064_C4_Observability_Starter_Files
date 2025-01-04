@@ -6,21 +6,22 @@
 
 To verify the monitoring setup, the kubectl commands were executed to display the running pods and services for all components. The following screenshot captures the output: 
 
-verify_the_monitoring_installation.png
+![Monitoring Installation Verification](../answer-img/verify_the_monitoring_installation.png)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 
 The screenshot below shows the Grafana home page after logging in
 
-setup_the_jaeger_and_prometheus_source.png
+![setup_the_jaeger_and_prometheus_source](../answer-img/setup_the_jaeger_and_prometheus_source.png)
+
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
 The screenshot below shows a Grafana dashboard with Prometheus as the data source:
 
-create_a_basic_dashboard.png
+![create_a_basic_dashboard](../answer-img/create_a_basic_dashboard.png)
 
 
 ## Describe SLO/SLI
@@ -72,30 +73,36 @@ These metrics provide actionable insights into system performance, enabling team
 Frontend and Backend Uptime Dashboard:
 The screenshot below displays a dashboard that measures the uptime of both the frontend and backend services.
 
-create_a_dashboard_to_measure_our_SLIs_frontend_backend_uptime_dashboard.png
+![create_a_dashboard_to_measure_our_SLIs_frontend_backend_uptime_dashboard](../answer-img/create_a_dashboard_to_measure_our_SLIs_frontend_backend_uptime_dashboard.png)
 
 Error Monitoring Dashboard:
 The screenshot below showcases a dashboard tracking 40x and 50x errors over a 24-hour period.
 
-create_a_dashboard_to_measure_our_SLIs_error_monitoring_dashboard.png
+![create_a_dashboard_to_measure_our_SLIs_error_monitoring_dashboard](../answer-img/create_a_dashboard_to_measure_our_SLIs_error_monitoring_dashboard.png)
+
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 
 Jaeger Span Screenshot:
 The screenshot below shows a Jaeger span that captures the backend service's processes for tracing and performance monitoring.
-tracing_our_flask_app_jaeger_span.png
+
+![tracing_our_flask_app_jaeger_span](../answer-img/tracing_our_flask_app_jaeger_span.png)
+
 
 Trace and Span Code Screenshot:
 The screenshot below highlights the Python code used to implement Jaeger tracing on the backend service, including the creation of spans for detailed process monitoring.
-tracing_our_flask_app_sample_python_file.png
+
+![tracing_our_flask_app_sample_python_file](../answer-img/tracing_our_flask_app_sample_python_file.png)
 
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
 The following is a screenshot showing Jaeger integrated into the current Grafana dashboard:
-jaeger_in_dashboards.png
+
+![jaeger_in_dashboards](../answer-img/jaeger_in_dashboards.png)
+
 
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
@@ -113,7 +120,9 @@ We are encountering intermittent HTTP 500 errors and prolonged latency in the Tr
 Please investigate and resolve this issue as soon as possible.
 
 Attachment: Screenshot of the tracer span showing the error.
-report_errors.png
+
+![report_errors](../answer-img/report_errors.png)
+
 
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
@@ -183,5 +192,6 @@ Shows the percentage uptime of the frontend and backend services.
 Tracks service availability and ensures adherence to the monthly uptime SLO.
 
 This comprehensive dashboard provides a real-time view of system performance and enables proactive monitoring to maintain service reliability and quality.
-final_dashboard.png
+
+![final_dashboard](../answer-img/final_dashboard.png)
 
